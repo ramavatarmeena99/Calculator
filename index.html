@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="mainDiv", style="display: flex;justify-content: center;align-items: center;text-align: center;flex-direction: column;">
+<h1>Calculator</h1>
+<div class="formstyle", style="font-weight:900;padding:5px;background-color: brown;width: 20%;height: 300px;padding-top: 30px;">
+<form name="form1">
+<input class="calc" type="text" name="answer" > <br> <br>
+<input type="button", style="font-size: 15px;" value="1" onclick="form1.answer.value += `1` " >
+<input type="button", style="font-size: 15px;" value="2" onclick="form1.answer.value += `2` ">
+<input type="button", style="font-size: 15px;" value="3" onclick="form1.answer.value += `3` ">
+<input type="button", style="font-size: 15px;" value="+" onclick="form1.answer.value += `+` " >
+<br> <br>
+<input type="button", style="font-size: 15px;" value="4" onclick="form1.answer.value += `4` ">
+<input type="button", style="font-size: 15px;" value="5" onclick="form1.answer.value += `5` ">
+<input type="button", style="font-size: 15px;" value="6" onclick="form1.answer.value += `6` ">
+<input type="button", style="font-size: 15px;" value="-" onclick="form1.answer.value += `-` ">
+<br> <br>
+<input type="button", style="font-size: 15px;" value="7" onclick="form1.answer.value += `7` ">
+<input type="button", style="font-size: 15px;" value="8" onclick="form1.answer.value += `8` ">
+<input type="button", style="font-size: 15px;" value="9" onclick="form1.answer.value += `9` ">
+<input type="button", style="font-size: 15px;" value="*" onclick="form1.answer.value += `*` ">
+<br> <br>
+<input type="button", style="font-size: 15px;" value="/" onclick="form1.answer.value += `/` ">
+<input type="button", style="font-size: 15px;" value="0" onclick="form1.answer.value += `0` ">
+<input type="button", style="font-size: 15px;" value="." onclick="form1.answer.value += `.` ">
+<input type="button", style="font-size: 15px;" value="=" onclick="form1.answer.value = eval(form1.answer.value)" >
+<br>
+<br>
+
+<input type="button", style="font-size: 15px;" value="Clear All" onclick="form1.answer.value += ` ` " class="clear" >
+
+
+</form>
+</div>
+</div>
+<script src="./script.js"></script>
+</body>
+
+</html>
